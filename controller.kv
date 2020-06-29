@@ -1,0 +1,283 @@
+#:kivy 1.8
+
+<controller>:
+	BoxLayout:
+		orientation:'vertical'
+		ActionBar:
+			ActionView:
+				ActionPrevious:
+					title:'ATHMI'
+					with_previous:False
+					app_icon:'Atlogo.png'
+				ActionButton:
+					text:'Comms'
+					on_release:root.compopup()
+				ActionButton:
+					text:'Quit'
+					on_press: app.stop()
+		Label:
+			id:iplabel
+			text:'Not Connected'
+			size_hint:1,0.05
+		Accordion:
+			AccordionItem:
+				title:'Digital'
+				collapse:False
+				GridLayout:
+					cols:8
+					Button:
+						text:'PB0'
+						always_release:True
+						background_color: 30/255, 200/255, 20/255, 1
+						on_press:root.setbit('0',1)
+						on_release:root.setbit('0',0)
+					Button:
+						text:'PB1'
+						always_release:True
+						background_color: 30/255, 200/255, 20/255, 1
+						on_press:root.setbit('1',1)
+						on_release:root.setbit('1',0)
+					Button:
+						text:'PB2'
+						always_release:True
+						background_color: 30/255, 200/255, 20/255, 1
+						on_press:root.setbit('2',1)
+						on_release:root.setbit('2',0)
+					Button:
+						text:'PB3'
+						always_release:True
+						background_color: 30/255, 200/255, 20/255, 1
+						on_press:root.setbit('3',1)
+						on_release:root.setbit('3',0)
+					ToggleButton:
+						id:PB4
+						text:'PB4'
+						background_color: 20/255, 20/255, 200/255, 1
+						on_press:root.settoggle('4',self.state)
+					ToggleButton:
+						id:PB5
+						text:'PB5'
+						background_color: 20/255, 20/255, 200/255, 1
+						on_press:root.settoggle('5',self.state)
+					ToggleButton:
+						id:PB6
+						text:'PB6'
+						background_color: 20/255, 20/255, 200/255, 1
+						on_press:root.settoggle('6',self.state)
+					ToggleButton:
+						id:PB7
+						text:'PB7'
+						background_color: 20/255, 20/255, 200/255, 1
+						on_press:root.settoggle('7',self.state)
+					Button:
+						text:'PB8'
+						always_release:True
+						background_color: 200/255, 20/255, 20/255, 1
+						on_press:root.setbit('8',0)
+						on_release:root.setbit('8',1)
+					Button:
+						text:'PB9'
+						always_release:True
+						background_color: 200/255, 20/255, 20/255, 1
+						on_press:root.setbit('9',0)
+						on_release:root.setbit('9',1)
+					Button:
+						text:'PB10'
+						always_release:True
+						background_color: 200/255, 20/255, 20/255, 1
+						on_press:root.setbit('10',0)
+						on_release:root.setbit('10',1)
+					Button:
+						text:'PB11'
+						always_release:True
+						background_color: 200/255, 20/255, 20/255, 1
+						on_press:root.setbit('11',0)
+						on_release:root.setbit('11',1)
+					ToggleButton:
+						id:PB12
+						text:'PB12'
+						background_color: 20/255, 20/255, 200/255, 1
+						on_press:root.settoggle('12',self.state)
+					ToggleButton:
+						id:PB13
+						text:'PB13'
+						background_color: 20/255, 20/255, 200/255, 1
+						on_press:root.settoggle('13',self.state)
+					ToggleButton:
+						id:PB14
+						text:'PB14'
+						background_color: 20/255, 20/255, 200/255, 1
+						on_press:root.settoggle('14',self.state)
+					ToggleButton:
+						id:PB15
+						text:'PB15'
+						background_color: 20/255, 20/255, 200/255, 1
+						on_press:root.settoggle('15',self.state)
+					ToggleButton:
+						id:IND0
+						disabled:True
+						text:'IND0'
+						background_color: (1,1,1,1) if self.state == 'normal' else (0,1,0,1)
+						background_normal:''
+					ToggleButton:
+						id:IND1
+						disabled:True
+						text:'IND1'
+						background_color: (1,1,1,1) if self.state == 'normal' else (0,1,0,1)
+						background_normal:''
+					ToggleButton:
+					    id:IND2
+						disabled:True
+						text:'IND2'
+						background_color: (1,1,1,1) if self.state == 'normal' else (0,1,0,1)
+						background_normal:''
+					ToggleButton:
+					    id:IND3
+						disabled:True
+						text:'IND3'
+						background_color: (1,1,1,1) if self.state == 'normal' else (0,1,0,1)
+						background_normal:''
+					ToggleButton:
+					    id:IND4
+						disabled:True
+						text:'IND4'
+						background_color: (1,1,1,1) if self.state == 'normal' else (0,1,0,1)
+						background_normal:''
+					ToggleButton:
+					    id:IND5
+						disabled:True
+						text:'IND5'
+						background_color: (1,1,1,1) if self.state == 'normal' else (0,1,0,1)
+						background_normal:''
+					ToggleButton:
+					    id:IND6
+						disabled:True
+						text:'IND6'
+						background_color: (1,1,1,1) if self.state == 'normal' else (0,1,0,1)
+						background_normal:''
+					ToggleButton:
+					    id:IND7
+						disabled:True
+						text:'IND7'
+						background_color: (1,1,1,1) if self.state == 'normal' else (0,1,0,1)
+						background_normal:''
+					ToggleButton:
+					    id:IND8
+						disabled:True
+						text:'IND8'
+						background_color: (1,1,1,1) if self.state == 'normal' else (0,1,0,1)
+						background_normal:''
+					ToggleButton:
+					    id:IND9
+						disabled:True
+						text:'IND9'
+						background_color: (1,1,1,1) if self.state == 'normal' else (0,1,0,1)
+						background_normal:''
+					ToggleButton:
+					    id:IND10
+						disabled:True
+						text:'IND10'
+						background_color: (1,1,1,1) if self.state == 'normal' else (0,1,0,1)
+						background_normal:''
+					ToggleButton:
+					    id:IND11
+						disabled:True
+						text:'IND11'
+						background_color: (1,1,1,1) if self.state == 'normal' else (0,1,0,1)
+						background_normal:''
+					ToggleButton:
+					    id:IND12
+						disabled:True
+						text:'IND12'
+						background_color: (1,1,1,1) if self.state == 'normal' else (0,1,0,1)
+						background_normal:''
+					ToggleButton:
+					    id:IND13
+						disabled:True
+						text:'IND13'
+						background_color: (1,1,1,1) if self.state == 'normal' else (0,1,0,1)
+						background_normal:''
+					ToggleButton:
+					    id:IND14
+						disabled:True
+						text:'IND14'
+						background_color: (1,1,1,1) if self.state == 'normal' else (0,1,0,1)
+						background_normal:''
+					ToggleButton:
+					    id:IND15
+						disabled:True
+						text:'IND15'
+						background_color: (1,1,1,1) if self.state == 'normal' else (0,1,0,1)
+						background_normal:''
+			AccordionItem:
+				title:'Analog'
+				GridLayout:
+					cols:2
+					BoxLayout:
+						orientation:'vertical'
+						Label:
+							size_hint:1,0.1
+							text:'Analog Input CH1'
+						Label:
+						    id:CH1Label
+							size_hint:1,0.1
+							text:'{}'.format(CH1IN.value)
+						Slider:
+						    id:CH1IN
+							size_hint:1,0.8
+							min:0
+							max:100
+							step:1
+							value_track:True
+							on_value:root.setanalog('1',CH1IN.value)
+					BoxLayout:
+						orientation:'vertical'
+						Label:
+							size_hint:1,0.1
+							text:'Analog Input CH2'
+						Label:
+						    id:CH2Label
+							size_hint:1,0.1
+							text:'{}'.format(CH2IN.value)
+						Slider:
+						    id:CH2IN
+							size_hint:1,0.8
+							min:0
+							max:100
+							step:1
+							value_track:True
+							on_value:root.setanalog('2',CH2IN.value)
+					BoxLayout:
+						orientation:'vertical'
+						Label:
+							size_hint:1,0.1
+							text:'Analog Output CH1'
+						Label:
+						    id:CH1OLabel
+							size_hint:1,0.1
+							text:'{}'.format(CH1OUT.value)
+						Slider:
+						    id:CH1OUT
+							disabled:True
+							min:0
+							max:100
+							step:1
+							value:25
+							value_track:True
+					BoxLayout:
+						orientation:'vertical'
+						Label:
+							size_hint:1,0.1
+							text:'Analog Output CH2'
+						Label:
+						    id:CH1OLabel
+							size_hint:1,0.1
+							text:'{}'.format(CH2OUT.value)
+						Slider:
+						    id:CH2OUT
+							disabled:True
+							min:0
+							max:100
+							step:1
+							value:75
+							value_track:True
