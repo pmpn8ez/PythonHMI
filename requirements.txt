@@ -16,7 +16,7 @@ Kivy-examples==1.11.1
 Kivy-Garden==0.1.4
 packaging==20.4
 pip==19.2.3
-Pygments==2.6.1
+Pygments==2.7.4
 pylogix==0.6.7
 pyparsing==2.4.7
 pypiwin32==223
