@@ -25,7 +25,7 @@ pywin32==227
 requests==2.23.0
 setuptools==47.1.1
 six==1.15.0
-urllib3==1.25.9
+urllib3==1.26.5
 virtenv==0.3.1
 virtualenv==20.0.21
 wheel==0.34.2
