@@ -21,7 +21,7 @@ pylogix==0.6.7
 pyparsing==2.4.7
 pypiwin32==223
 pythonfinder==1.2.3
-pywin32==227
+pywin32==301
 requests==2.23.0
 setuptools==47.1.1
 six==1.15.0
